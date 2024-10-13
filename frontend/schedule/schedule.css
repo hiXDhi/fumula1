@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.schedule {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 250px 50px 250px; /* Giảm padding */
+}
+
+.event {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 30%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out; /* Thêm hiệu ứng chuyển đổi */
+}
+
+.event:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi trỏ chuột vào */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tăng độ đổ bóng khi hover */
+}
+
+.event img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.event-header div {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.event-header img {
+    width: 40px; /* Tăng kích thước cờ */
+    height: auto;
+}
+
+.event-date {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.event-month {
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.event-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.event-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.drivers {
+    display: flex;
+    justify-content: space-around; /* Tăng khoảng cách giữa các driver */
+    align-items: center;
+    margin-top: 15px; /* Tăng khoảng cách với các phần tử khác */
+    padding: 0 0 0 0;
+}
+
+.driver {
+    flex: 1;
+    margin: 0 10px; /* Tạo khoảng cách giữa các driver */
+    background-color: #f8f9fa; /* Thêm màu nền nhẹ */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Thêm đổ bóng */
+    text-align: center;
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi cho driver */
+}
+
+.driver img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.driver img:hover {
+    transform: scale(1.1); /* Phóng to ảnh khi hover */
+}
+
+.driver-code {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+.driver-code.blue {
+    color: #007bff;
+}
+
+.driver-code.red {
+    color: #dc3545;
+}

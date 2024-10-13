@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header-teams {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+.header p {
+    font-size: 16px;
+    color: #666;
+}
+.team {
+    display: flex; /* Sử dụng flexbox để hiển thị hai đội trong một dòng */
+    
+    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng nếu không đủ chỗ */
+    margin-bottom: 20px;
+}
+.team-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 40%; /* Chiều rộng mỗi đội là 48% */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   margin: 20px;
+}
+.team-card h2 {
+    font-size: 24px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.team-card h2 span {
+    font-size: 36px;
+    margin-right: 10px;
+}
+.team-card h2 .team-name {
+    display: flex;
+    align-items: center;
+}
+.team-card h2 .team-name span {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #666;
+}
+.team-card .points {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+}
+.team-card .points span {
+    font-size: 16px;
+    color: #666;
+}
+.team-card .drivers {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 30px;
+}
+.team-card .drivers .driver {
+    text-align: center;
+    width: 48%;
+    border: solid;
+    border-width: 1px;
+    border-top: none;
+    border-left: none;
+    border-radius: 10px;
+}
+.team-card .drivers .driver img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.team-card .drivers .driver p {
+    margin: 0;
+    font-size: 14px;
+}
+.team-card .car {
+    margin-top: 10px;
+    text-align: center;
+}
+.team-card .car img {
+    width: 80%;
+}
+
+.team-card:hover {
+    transform: scale(1.02); /* Phóng to nhẹ khi trỏ chuột vào */
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Tăng độ đổ bóng */
+}
+.team-card .drivers .driver:hover {
+    background-color: #f0f0f0; /* Đổi màu nền khi trỏ chuột vào */
+    transform: scale(1.05);
+    transition: background-color 0.3s ease; /* Thêm hiệu ứng mượt */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Thêm đổ bóng cho driver */
+}
+.team-card h2:hover, .team-card .points:hover {
+    color: #007bff; /* Thay đổi màu chữ khi trỏ chuột vào */
+    cursor: pointer; /* Thêm hiệu ứng con trỏ chuột */
+}

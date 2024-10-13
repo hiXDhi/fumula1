@@ -1,0 +1,82 @@
+
+.drivers {
+    padding: 50px 250px 50px 250px;
+}
+/* Định kiểu cho phần chứa tay đua */
+#driver-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Căn giữa các card */
+    gap: 20px; /* Khoảng cách giữa các card */
+    padding: 50px 250px 50px 250px;
+}
+
+/* Định kiểu cho mỗi thẻ card tay đua */
+.card {
+    background-color: #ffffff; /* Màu nền trắng cho card */
+    border: 1px solid #ddd; /* Đường viền mỏng */
+    border-radius: 10px; /* Bo góc cho card */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho card */
+    width: 380px; /* Chiều rộng card */
+    text-align: center; /* Căn giữa nội dung */
+    overflow: hidden; /* Ẩn nội dung bị tràn */
+    transition: transform 0.3s; /* Hiệu ứng chuyển động khi hover */
+}
+
+/* Hiệu ứng hover cho card */
+.card:hover {
+    transform: translateY(-5px); /* Đẩy card lên một chút khi hover */
+}
+
+/* Định kiểu cho phần header trong card */
+.card .header {
+    background-color: #f5f5f5; /* Màu nền cho header */
+    padding: 10px 0; /* Padding cho header */
+}
+
+/* Định kiểu cho vị trí và điểm số */
+.card .position {
+    font-size: 24px; /* Kích thước font cho vị trí */
+    font-weight: bold; /* Đậm cho vị trí */
+    color: #333; /* Màu chữ cho vị trí */
+}
+
+.card .points {
+    font-size: 16px; /* Kích thước font cho điểm số */
+    color: #777; /* Màu chữ cho điểm số */
+}
+
+/* Định kiểu cho tên tay đua */
+.card .name {
+    font-size: 18px; /* Kích thước font cho tên tay đua */
+    font-weight: bold; /* Đậm cho tên tay đua */
+    margin: 10px 0; /* Khoảng cách trên và dưới */
+}
+
+/* Định kiểu cho cờ tay đua */
+.card .flag {
+    width: 30px; /* Chiều rộng cờ */
+    height: auto; /* Chiều cao tự động */
+}
+
+/* Định kiểu cho đội */
+.card .team {
+    font-size: 14px; /* Kích thước font cho tên đội */
+    color: #555; /* Màu chữ cho tên đội */
+    margin: 5px 0; /* Khoảng cách trên và dưới */
+}
+
+/* Định kiểu cho ảnh tay đua */
+.card .driver-image {
+    width: 100%; /* Đầy đủ chiều rộng của card */
+    height: auto; /* Chiều cao tự động */
+}
+
+/* Định kiểu cho số tay đua */
+.card .driver-number {
+    font-size: 14px; /* Kích thước font cho số tay đua */
+    font-weight: bold; /* Đậm cho số tay đua */
+    color: #f00; /* Màu đỏ cho số tay đua */
+    margin-top: 5px; /* Khoảng cách trên */
+}
+
